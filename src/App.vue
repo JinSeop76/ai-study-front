@@ -1,10 +1,7 @@
-<script setup></script>
-
 <template>
-  <h1>환영합니다.</h1>
-  <p>
-    초기 페이지
-  </p>
+  <RouterView />
 </template>
 
-<style scoped></style>
+<script setup>
+import { RouterView } from 'vue-router'
+</script>

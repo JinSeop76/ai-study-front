@@ -9,15 +9,19 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onUnmounted  } from 'vue'
 import { basemap } from '@/composables/basemap'
 import Header from '@/components/Header.vue'
 
 const mapRef = ref(null)
-const { initMap } = basemap()
+const { initMap, destroyMap } = basemap()
 
 onMounted(() => {
   initMap(mapRef.value)
+})
+
+onUnmounted(() => {
+  destroyMap()
 })
 </script>
 

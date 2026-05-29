@@ -1,4 +1,3 @@
-import { ref, onUnmounted } from 'vue'
 import Map from 'ol/Map'
 import View from 'ol/View'
 import TileLayer from 'ol/layer/Tile'
@@ -54,9 +53,7 @@ export function basemap() {
   }
 
   // MapView.vue 에서 onUnmounted 안 써도 되도록 여기서 자동 처리
-  onUnmounted(() => {
-    destroyMap()
-  })
+  
 
   return {
     initMap,

@@ -4,7 +4,7 @@
       <!-- 로고 / 서비스명 -->
       <div class="logo" @click="goHome">
         <span class="logo-icon">🗺</span>
-        <span class="logo-text">AI 인허가 사전진단</span>
+        <span class="logo-text">AI 스터디 시작해보기</span>
       </div>
 
       <!-- 네비게이션 -->

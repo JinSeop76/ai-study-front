@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
+import MapView from '@/views/MapView.vue'
 
 const routes = [
   {
@@ -10,8 +11,7 @@ const routes = [
   {
     path: '/map',
     name: 'map',
-    // 지도 페이지는 나중에 만들 예정 — 지금은 lazy load로 선언만
-    component: () => import('@/views/MapView.vue'),
+    component: MapView
   },
 ]
 
